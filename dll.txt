@@ -1,1 +1,0 @@
-Get-ChildItem -Path C:\Windows\Microsoft.Net\assembly -Filter "System.Management.Automation.dll" -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
